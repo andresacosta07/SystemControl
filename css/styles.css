@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0; /* estilos desde Cero*/
+  border: 0;
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f6e58d;
+}
+
+#logo{
+  margin-left: 70%;
+}
+
+
+/*--- navigation bar ---*/
+.navbar {
+  background:#f0b429;
+
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+
+}
+.nav-link {
+  margin-right: 10px;
+ 
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+#main-navigation{
+  margin-right: 15%;
+}
+
+
+.ContenerPrincipal{
+  background: #f6e58d;
+}
+
+.margenContenido{
+  margin: 1% 5% 1% 5%;
+  text-align: center;
+ 
+}
+
+/*--- contenido ---*/
+
+.tituloAplicativo{
+  text-align: center;
+}
+
+.tituloAplicativo h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 300%;
+}
+
+.descripcion p{
+  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 120%;
+  
+}
+
+/*--- footer ---*/
+
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 20px 0;
+}
+
+
+
+
+
+
+
+
