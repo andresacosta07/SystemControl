@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="SystemControl"
+      content="Aplicacion web para la Tienda Fox electronics "
+    />
+    <meta name="author" content="CARLOS ANDRES ACOSTA ACEVEDO" />
+    <meta name="keywords" content="Tienda Fox electronics ,html,css, Framework Bootstrap" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css"    href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>SystemControl</title>
+  </head>
+
+  <body>
+
+
+
+    
+
+      <div class="ContenerPrincipal">
+
+     
+          
+
+      <nav class = "navbar navbar-expand-md" >
+          <a class="navbar-brand" href="index.html">
+              <img src="img/logoEmpresa5.png" width="110" height="80" class="d-inline-block align-top" alt="" id="logo">
+              FOX ELECTRONICS 
+            </a><button class = "navbar-toggler navbar-dark" type = "button" data-toggle = "collapse" data-target = "# main-navigation" >
+            <span class = "navbar-toggler-icon" > </span>
+          </button>
+          <div class = "collapse navbar-collapse" id = "main-navigation" >
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Administrador</a>
+                  </li>
+                     
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Inventario
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="Ingresar.html">Ingresar producto</a>
+                      <a class="dropdown-item" href="Actualizar.html">Actualizar producto</a>
+                      <a class="dropdown-item" href="Eliminar.html">Eliminar Producto</a>
+                       <a class="dropdown-item" href="Consultar.html">Consultar Producto</a>
+                    </div>
+                  </li>
+                      <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Ventas
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="ventas.html">Especificaciónes-Ventas</a>
+                    </div>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Utilidades
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="simulador.html">Simulador Producto</a>
+                      <a class="dropdown-item" href="resistencias.html">Simulador Resistencias</a>
+                    </div>
+                  </li>
+                </ul>
+          </div>
+        </nav>
+
+    
+
+      <div class="margenContenido">
+        
+        <section class="tituloAplicativo">
+
+            <h1>Simulador de  </h1>
+            <h2>Resistencias Eléctricas </h>
+              <br>
+              
+
+        </section>
+            <figure class="resistencias">
+                <a href="#" id="logoTexto">
+                    <img src="img/resistencias.png" alt="" />
+                  </a>
+            </figure>
+
+            <div class="margenFormulario">
+
+               <!-- Creacion de la función-->
+               <script>
+               
+                
+                  function resistencias(){
+  
+  
+                    var res1 = document.listaResistencias.banda1.value;
+                    var res2 = document.listaResistencias.banda2.value;
+                    var res3 = document.listaResistencias.banda3.value;
+                    var resultado = document.listaResistencias.texResultado.value;
+                    var Ohmios= " Ohmios";
+  
+                    var concatenarNumeros=res1.toString()+res2.toString();
+                    resultado = parseFloat(concatenarNumeros)*parseFloat(res3);
+                    document.listaResistencias.texResultado.value=resultado + Ohmios;
+
+                   
+  
+  
+                  }
+  
+                  </script>
+
+                <form name="listaResistencias" class="formulario">
+        
+                  <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Primera banda:</label>
+                    <div class="col-sm-10">
+                        <select name="banda1" class="form-control">
+                            <option value="">Seleccione</option>
+                            <option value="0" class="negro">Negro</option>
+                            <option value="1"class="cafe">Cafe</option>
+                            <option value="2"class="rojo">Rojo</option>
+                            <option value="3"class="naranja">Naranja</option>
+                            <option value="4"class="amarillo">Amarilo</option>
+                            <option value="5"class="verde">Verde</option>
+                            <option value="6"class="azul">Azul</option>
+                            <option value="7"class="violeta">Violeta</option>
+                            <option value="8"class="gris">Gris</option>
+                            <option value="9"class="blanco">Blanco</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Segunda banda:</label>
+                    <div class="col-sm-10">
+                        <select name="banda2" class="form-control">
+                            <option value="">Seleccione</option>
+                            <option value="0" class="negro">Negro</option>
+                            <option value="1"class="cafe">Cafe</option>
+                            <option value="2"class="rojo">Rojo</option>
+                            <option value="3"class="naranja">Naranja</option>
+                            <option value="4"class="amarillo">Amarilo</option>
+                            <option value="5"class="verde">Verde</option>
+                            <option value="6"class="azul">Azul</option>
+                            <option value="7"class="violeta">Violeta</option>
+                            <option value="8"class="gris">Gris</option>
+                            <option value="9"class="blanco">Blanco</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Tercera banda:</label>
+                    <div class="col-sm-10">
+                        <select name="banda3" class="form-control">
+                            <option value="">Seleccione</option>
+                            <option value="1" class="negro">Negro</option>
+                            <option value="10" class="cafe">Cafe</option>
+                            <option value="100" class="rojo">Rojo</option>
+                            <option value="1000" class="naranja">Naranja</option>
+                            <option value="10000" class="amarillo">Amarilo</option>
+                            <option value="100000" class="verde">Verde</option>
+                            <option value="1000000" class="azul">Azul</option>
+                            <option value="10000000" class="violeta">Violeta</option>
+                            <option value="100000000" class="gris">Gris</option>
+                            <option value="1000000000" class="blanco">Blanco</option>
+                        </select>
+                    </div>
+                  </div>
+
+                  <button type="Button" class="btn btn-primary mb-2 btn-lg" onclick="resistencias()" id="colorBotonCalcular">Calcular</button>
+                  <button type="Button" class="btn btn-primary mb-2 btn-lg" onclick="reset()" id="colorBotonLimpiar">Limpiar</button>
+                  <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Resultado:</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" name="texResultado" placeholder="Ohmios " disabled>
+                    </div>
+                  </div>
+                  
+        
+                </form>
+
+                
+               
+              </div>
+  
+      
+
+      </div>
+
+        <footer class = "page-footer" >
+            <div class = "container" >
+              <div class = "row" >
+                <div class = "col-lg-8 col-md-8 col-sm-12" >
+                <h6 class = "text-mayúscula font-weight-bold" > Aplicativo SystemControl </h6>
+                <p> La tienda “Fox Electronics” se dedica a la comercialización de componentes electrónicos tales como: resistencias, transistores, circuitos integrados, sistemas embebidos,
+                   condensadores, bobinas y demás elementos de uso común en la industria, control y automatización electrónica de procesos. </p>
+               </div>
+              <div class = "col-lg-4 col-md-4 col-sm-12" >
+                <h6 class = "text-mayúsculas font-weight-bold" > Autor </h6>
+                <p> Carlos Andres Acosta Acevedo
+                <br/> andresacosta.ing@gmail.com
+                <br/> Curso: Programacion de Sitios Web
+                <br/> Codigo curso: 301127_9
+                
+               </p>   
+              </div>
+            </div>
+            <div class ="footer-copyright text-center"> © 2019 Copyright: Carlos Andres Acosta Acevedo. Todos los derechos reservados...
+               </div>
+          </footer>
+
+
+        </div>
+    
+  </body>
+</html>
