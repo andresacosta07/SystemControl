@@ -20,10 +20,6 @@
 
 <body>
 
-
-
-
-
   <div class="ContenerPrincipal">
 
 
@@ -61,7 +57,7 @@
             <div class="dropdown-menu">
               <a class="dropdown-item" href="venderProducto.html">Verder Producto</a>
             </div>
-           
+       
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
               Utilidades
@@ -75,37 +71,90 @@
       </div>
     </nav>
 
-
-
     <div class="margenContenido">
 
       <section class="tituloAplicativo">
 
-        <h1>SystemControl Versión 1.0 </h1>
-        <br>
+        <h1>Vender </h1>
+        <h2>Productos </h>
+          <br>
 
       </section>
-      <figure>
-        <a href="#" id="logoTexto">
-          <img src="img/logoEmpresa5.png" alt="" />
-        </a>
-      </figure>
 
-      <section class="descripcion">
+
+      <section class="descripcionSimulador">
 
 
 
-        <p>El objetivo principal del aplicativo Versión 1.0 es facilitar las funciones principales de la empresa Fox
-          Electronics que permita controlar las compras a proveedores,
-          ventas al público, inventarios y cálculo de precio de venta al público incluyendo impuestos (%) y utilidad
-          para la tienda (%). <br> <br>
-          En otras palabras es proporcionar una solución viable a la problemática que se ha venido generando de forma
-          reiterada recientemente a la empresa Fox Electronics mediante un aplicativo web llamado SystemControl
-          que permitirá optimizar procesos que conlleven a que esta preste un mejor servicio a sus clientes y adquiera
-          un mejor respaldo de sus productor y proveedores.
-
+        <p>Permite vender productos disponliebes en la tienda. <br> 
         </p>
       </section>
+
+
+      <div class="container" id="fondoVenderProducto">
+
+          <script>
+        
+              function validar(){
+      
+               
+                var venderPro = document.getElementById("idProducto").value;
+                var valorPro = document.getElementById("valorProducto").value;
+                var cantidadPro = document.getElementById("cantidadProducto").value;
+                
+      
+                if(venderPro==""){
+                  alert("Debe ingresar código del  Producto");
+                }
+                else if(valorPro==""){
+                  alert("Debe ingresar valor del  Producto");
+                }
+               else if(cantidadPro==""){
+                  alert("Debe ingresar cantidad a vender del  Producto");
+                }
+               
+                
+                else{
+                
+              alert("Producto vendido exitosamente");
+            
+      
+                }
+               
+               
+              }
+
+       
+ 
+        
+        </script>
+
+        <form name="valores" class="formulario">
+
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Código de producto:</label>
+            <div class="col-sm-10">
+              <input class="form-control" placeholder="Ingrese el código del producto que desea vender" id="idProducto" name="idProducto" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Valor de venta:</label>
+            <div class="col-sm-10">
+              <input class="form-control" placeholder=" $ Ingrese el valor de venta" id="valorProducto" name="valorProducto" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Cantidad a vender:</label>
+            <div class="col-sm-10">
+              <input class="form-control" placeholder="Ingrese cantidad que desea vender" id="cantidadProducto" name="cantidadProducto" required>
+            </div>
+          </div>
+          
+          <button type="button" class="btn btn-primary mb-2 btn-lg"  id="colorBotonCalcular" onclick="validar()">Vender Producto</button>
+          <button type="Button" class="btn btn-primary mb-2 btn-lg" onclick="reset()" id="colorBotonLimpiar">Limpiar</button>
+         
+        </form>
+      </div>
 
     </div>
 

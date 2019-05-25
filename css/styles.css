@@ -184,7 +184,52 @@ body {
     background: #ff6b81;
   }
 
+  #fondoIngresarProducto{
 
+    background: #7bed9f;
+    border-radius: 15px;
+    padding: 1%;
+
+  }
+
+  #fondoActualizarProducto{
+
+    background: #c7ecee;
+    border-radius: 15px;
+    padding: 1%;
+
+  }
+
+
+  #fondoEliminarProducto{
+
+    background:  #ff7979;
+    border-radius: 15px;
+    padding: 1%;
+
+  }
+
+#colorBotonEliminar{
+
+  background: red;
+
+}
+
+#fondoConsultarProducto{
+
+  background: #b2bec3;
+  border-radius: 15px;
+    padding: 1%;
+
+}
+
+#fondoVenderProducto{
+
+  background: #34ace0;
+  border-radius: 15px;
+  padding: 1%;
+
+}
 
   
 
