@@ -42,8 +42,9 @@ body {
 }
 
 .margenContenido {
-  margin: 1% 5% 1% 5%;
+  margin: 1% 12% 1% 15%;
   text-align: center;
+
 }
 
 /*--- contenido ---*/
@@ -186,7 +187,7 @@ body {
 
   #fondoIngresarProducto{
 
-    background: #7bed9f;
+    background: #70a1ff;
     border-radius: 15px;
     padding: 1%;
 
@@ -229,6 +230,14 @@ body {
   border-radius: 15px;
   padding: 1%;
 
+}
+
+input:valid {
+ 
+  border: 4px solid #4cd137;
+}
+input:invalid {
+  border: 4px solid #eb2f06;
 }
 
   
