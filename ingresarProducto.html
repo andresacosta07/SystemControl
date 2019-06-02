@@ -12,6 +12,7 @@
   <script src="js/modernizr-custom.js"></script>
   <script src="js/prefixfree.min.js"></script>
   <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/validar.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -140,31 +141,31 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Código de producto:</label>
             <div class="col-sm-10">
-              <input class="form-control" placeholder="Ingrese el código del producto" id="idProducto" name="idProducto" required>
+              <input class="form-control" placeholder="Ingrese el código del producto" id="idProducto" name="idProducto" onkeypress="return solonumeros(event)" onpaste ="return false" required>
             </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Nombre del producto:</label>
             <div class="col-sm-10">
-              <input class="form-control" placeholder="Ingrese nombre del producto" id="nombreProducto" name="nombreProducto" required> 
+              <input class="form-control" placeholder="Ingrese nombre del producto" id="nombreProducto" name="nombreProducto" onkeypress="return sololetras(event)" onpaste="return false" required> 
             </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Marca producto:</label>
             <div class="col-sm-10">
-              <input class="form-control" placeholder="Ingrese la marca del producto" id="marcaProdcuto" name="marcaProdcuto" required>
+              <input class="form-control" placeholder="Ingrese la marca del producto" id="marcaProdcuto" name="marcaProdcuto" onkeypress="return sololetras(event)" onpaste="return false" required>
             </div>
           </div>
           <div class="form-group row">
               <label class="col-sm-2 col-form-label">Precio de compra:</label>
               <div class="col-sm-10">
-                <input class="form-control" placeholder="Ingrese el precio de compra del producto" id="precioCompra" name="precioCompra" required>
+                <input class="form-control" placeholder="Ingrese el precio de compra del producto" id="precioCompra" name="precioCompra" onkeypress="return solonumeros(event)" onpaste ="return false" required>
               </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Cantidad a comprar:</label>
                 <div class="col-sm-10">
-                  <input class="form-control" placeholder="Ingrese la cantidad de productos que desea comprar" id="cantidadCompra" name="cantidadCompra" required>
+                  <input class="form-control" placeholder="Ingrese la cantidad de productos que desea comprar" id="cantidadCompra" name="cantidadCompra" onkeypress="return solonumeros(event)" onpaste ="return false" required>
                 </div>
               </div>
           <button type="button" class="btn btn-primary mb-2 btn-lg"  id="colorBotonCalcular" onclick="validar()">Guardar Producto</button>
