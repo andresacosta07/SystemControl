@@ -13,6 +13,7 @@
   <script src="js/prefixfree.min.js"></script>
   <script src="js/jquery-3.4.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/validar.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>SystemControl</title>
@@ -127,7 +128,7 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Código de producto:</label>
             <div class="col-sm-10">
-              <input class="form-control" placeholder="Ingrese el código del producto que desea consultar" id="consultarProducto" name="consultarProducto" required>
+              <input class="form-control" placeholder="Ingrese el código del producto que desea consultar" id="consultarProducto" name="consultarProducto" onkeypress="return solonumeros(event)" onpaste ="return false" required>
             </div>
           </div>
           
