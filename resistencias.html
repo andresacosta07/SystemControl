@@ -14,6 +14,7 @@
     <script src="js/modernizr-custom.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/validar.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -40,39 +41,51 @@
           </button>
           <div class = "collapse navbar-collapse" id = "main-navigation" >
               <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="administrador.html">Administrador</a>
-                  </li>
-                     
+
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                      Inventario
-                    </a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="ingresarProducto.html">Ingresar producto</a>
-                      <a class="dropdown-item" href="actualizarProducto.html">Actualizar producto</a>
-                      <a class="dropdown-item" href="eliminarProducto.html">Eliminar producto</a>
-                      <a class="dropdown-item" href="consultarProducto.html">Consultar producto</a>
-                    </div>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Administrador
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="crearBd.html">Crear Base de Datos</a>
+                        <a class="dropdown-item" href="crearTabla.html">Crear Tabla en BD</a>
+                        <a class="dropdown-item" href="CrearCopia.html">Crear Backup</a>
+                        <a class="dropdown-item" href="generarInforme.html">Generar Informe</a>
+                      </div>
+                    </li>
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Inventario
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="ingresarProducto.html">Ingresar producto</a>
+                    <a class="dropdown-item" href="actualizarProducto.html">Actualizar producto</a>
+                    <a class="dropdown-item" href="eliminarProducto.html">Eliminar producto</a>
+                    <a class="dropdown-item" href="consultarProducto.html">Consultar producto</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Ventas
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="venderProducto.html">Vender Producto</a>
+                  </div>
+                 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Utilidades
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="simulador.html">Simulador producto</a>
+                    <a class="dropdown-item" href="resistencias.html">Simulador resistencias</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inicioSesion.html">Inicio de Sesión</a>
                   </li>
-                      <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                      Ventas
-                    </a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="venderProducto.html">Vender Producto</a>
-                    </div>
-                  
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                      Utilidades
-                    </a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="simulador.html">Simulador producto</a>
-                      <a class="dropdown-item" href="resistencias.html">Simulador resistencias</a>
-                    </div>
-                  </li>
-                </ul>
+              </ul>
           </div>
         </nav>
 
@@ -196,28 +209,31 @@
       
 
       </div>
-
-        <footer class = "page-footer" >
-            <div class = "container" >
-              <div class = "row" >
-                <div class = "col-lg-8 col-md-8 col-sm-12" >
-                <h6 class = "text-mayúscula font-weight-bold" > Aplicativo SystemControl </h6>
-                <p> La tienda “Fox Electronics” se dedica a la comercialización de componentes electrónicos tales como: resistencias, transistores, circuitos integrados, sistemas embebidos,
-                   condensadores, bobinas y demás elementos de uso común en la industria, control y automatización electrónica de procesos. </p>
-               </div>
-              <div class = "col-lg-4 col-md-4 col-sm-12" >
-                <h6 class = "text-mayúsculas font-weight-bold" > Autor </h6>
-                <p> Carlos Andres Acosta Acevedo
-                <br/> andresacosta.ing@gmail.com
-                <br/> Curso: Programacion de Sitios Web
-                <br/> Codigo curso: 301127_9
-                
-               </p>   
-              </div>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+              <h6 class="text-mayúscula font-weight-bold"> Aplicativo SystemControl </h6>
+              <p> La tienda “Fox Electronics” se dedica a la comercialización de componentes electrónicos tales como:
+                resistencias, transistores, circuitos integrados, sistemas embebidos,
+                condensadores, bobinas y demás elementos de uso común en la industria, control y automatización
+                electrónica de procesos. </p>
             </div>
-            <div class ="footer-copyright text-center"> © 2019 Copyright: Carlos Andres Acosta Acevedo. Todos los derechos reservados...
-               </div>
-          </footer>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <h6 class="text-mayúsculas font-weight-bold"> Autor </h6>
+              <p> Trabajo colaborativo 301127-9
+                <br /> andresacosta.ing@gmail.com
+                <br /> Curso: Programacion de Sitios Web
+                <br /> Codigo curso: 301127_9
+  
+              </p>
+            </div>
+          </div>
+          <div class="footer-copyright text-center"> © 2019 Copyright: 301127-9. Todos los derechos
+            reservados...
+          </div>
+      </footer>
+  
 
 
         </div>

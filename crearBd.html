@@ -12,14 +12,19 @@
   <script src="js/modernizr-custom.js"></script>
   <script src="js/prefixfree.min.js"></script>
   <script src="js/jquery-3.4.1.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/validar.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
 
   <title>SystemControl</title>
 </head>
 
+
+
 <body>
+
 
   <div class="ContenerPrincipal">
 
@@ -35,6 +40,7 @@
         <span class="navbar-toggler-icon"> </span>
       </button>
       <div class="collapse navbar-collapse" id="main-navigation">
+
           <ul class="navbar-nav">
 
               <li class="nav-item dropdown">
@@ -84,71 +90,49 @@
       </div>
     </nav>
 
+
+
     <div class="margenContenido">
 
       <section class="tituloAplicativo">
-
-        <h1>Consultar </h1>
-        <h2>Producto </h>
-          <br>
-
+          <a class="navbar-brand" href="index.html">
+              <img src="img/datos.png" width="110" height="80" class="d-inline-block align-top" alt="" id="logo">
+            </a>
+        <h1>CREAR  </h1>
+        <h2>BASE DE DATOS </h2>
       </section>
+     
+
+      <section class="login">
+
+          <section class="descripcionSimulador">
 
 
-      <section class="descripcionSimulador">
 
+              <p>Permite crear la Base de Datos <br> 
+              </p>
+            </section>
+            <div class="margenContenidoBase">
 
+            <div class="container" id="fondoIngreso">
 
-        <p>Permite consultar un producto con las siguientes especificaciones: 
-        código de producto <br> 
-        </p>
-      </section>
-
-
-      <div class="container" id="fondoConsultarProducto">
-
-          <script>
-        
-              function validar(){
       
-               
-                var consultarPro = document.getElementById("consultarProducto").value;
-                
-      
-                if(consultarPro==""){
-                  alert("Debe ingresar código del  Producto");
-                }
-               
-                
-                else{
-                
-              alert("Producto encontrado exitosamente");
-            
-      
-                }
-               
-               
-              }
 
-       
- 
-        
-        </script>
 
-        <form name="valores" class="formulario">
+  
 
-          <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Código de producto:</label>
-            <div class="col-sm-10">
-              <input class="form-control" placeholder="Ingrese el código del producto que desea consultar" id="consultarProducto" name="consultarProducto" onkeypress="return solonumeros(event)" onpaste ="return false" required>
+            <form name="valores" class="formularioBase" action="php/crear_Bd.php" >
+
+                
+                        
+                <button type="submit" class="btn btn-primary mb-2 btn-lg"  id="colorBotonCalcular">Crear Base de Datos</button>
+              
+              </form>
+
+
             </div>
-          </div>
-          
-          <button type="button" class="btn btn-primary mb-2 btn-lg"  id="colorBotonCalcular" onclick="validar()">Consultar Producto</button>
-          <button type="Button" class="btn btn-primary mb-2 btn-lg" onclick="reset()" id="colorBotonLimpiar">Limpiar</button>
-         
-        </form>
-      </div>
+       
+      </section>
 
     </div>
 
